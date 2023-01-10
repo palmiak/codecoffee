@@ -29,26 +29,71 @@
     src: url('../fonts/JetBrainsMono-ExtraBold.woff2') format('woff2');
 }
 
+/* poppins-regular - latin */
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('../fonts/poppins-v20-latin-regular.woff2') format('woff2');
+}
+
+/* poppins-italic - latin */
+@font-face {
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 400;
+    src: local(''),
+        url('../fonts/poppins-v20-latin-italic.woff2') format('woff2');
+}
+
+/* poppins-600 - latin */
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+        url('../fonts/poppins-v20-latin-600.woff2') format('woff2');
+}
+
+/* poppins-700 - latin */
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+        url('../fonts/poppins-v20-latin-700.woff2') format('woff2');
+}
+
+/* poppins-700italic - latin */
+@font-face {
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 700;
+    src: local(''),
+        url('../fonts/poppins-v20-latin-700italic.woff2') format('woff2');
+}
+
 @layer components {
     h1 {
-        @apply text-5xl md:text-5xl mb-10 font-bold text-white font-palmiak-font;
+        @apply text-5xl md:text-6xl mb-10 font-bold text-white;
     }
 
     h2 {
-        @apply text-4xl lg:text-4xl mt-10 mb-4 font-bold text-white font-palmiak-font;
+        @apply text-4xl lg:text-5xl mt-10 mb-4 font-bold text-white;
     }
 
     article h2 {
-        @apply text-3xl lg:text-4xl mt-10 mb-4 font-bold text-palmiak_pink font-palmiak-font;
+        @apply text-3xl lg:text-4xl mt-10 mb-4 font-bold;
 
     }
 
     h3 {
-        @apply text-2xl mt-8 mb-4 font-bold text-white font-palmiak-font;
+        @apply text-2xl mt-8 mb-4 font-bold text-white;
     }
 
     h4 {
-        @apply text-xl mt-8 mb-4 font-bold text-white font-palmiak-font;
+        @apply text-xl mt-8 mb-4 font-bold text-white;
     }
 
     .content {
@@ -59,7 +104,7 @@
         @apply text-lg px-0;
     }
 
-    .content > * {
+    .content>* {
         @apply max-w-3xl mx-auto;
     }
 
@@ -79,7 +124,7 @@
         @apply text-3xl my-16 text-center text-white font-serif max-w-lg mx-auto;
     }
 
-    .content > img,
+    .content>img,
     .content p img {
         @apply rounded-xl my-8 mx-auto;
     }
@@ -132,9 +177,38 @@
         @apply block text-sm text-white bg-zinc-800 p-0 rounded-none whitespace-pre;
     }
 
-    .content p ~ pre {
+    .content p~pre {
         @apply mt-0;
     }
+}
+
+.underline-link {
+    @apply bg-gradient-to-r from-palmiak_purple to-palmiak_blue no-underline ;
+    background-size: 0px 4px;
+    background-repeat: no-repeat;
+    background-position: left 85%;
+    /* line-height: 100%; */
+}
+
+.underline-link:hover {
+    background-size: 100% 4px;
+}
+
+.underline-link-small {
+    @apply bg-gradient-to-r from-palmiak_purple via-palmiak_blue to-palmiak_purple no-underline ;
+    background-size: 0px 2px;
+    background-repeat: no-repeat;
+    background-position: center 100%;
+    /* line-height: 100%; */
+}
+
+.underline-link-small:hover {
+    background-size: 100% 2px;
+}
+
+.line {
+    background-image: linear-gradient(90deg, transparent, transparent 50%, #151738 50%, #151738 100%), linear-gradient(90deg, #16E6F3, #EA4C88, #3F2DB9, #1D1F57);
+    background-size: 20px 5px, 100% 5px;
 }
 
 .palmiak-post-title {
@@ -164,12 +238,12 @@
     content: "";
     @apply absolute top-5 left-5 blur-3xl w-full h-full rounded-md block -z-10 transition-opacity duration-500 opacity-0;
     /* @apply absolute top-0 left-0 w-full h-full rounded-md block z-10 mix-blend-multiply transition-opacity duration-300 delay-300 opacity-0; */
-    background: linear-gradient(49deg,#F027A6, #16E6F3, #A05FE0);
+    background: linear-gradient(49deg, #F027A6, #16E6F3, #A05FE0);
     background-size: 180% 180%;
 }
 
 #revue-embed {
-    background: linear-gradient(49deg,#F027A6, #16E6F3, #A05FE0);
+    background: linear-gradient(49deg, #F027A6, #16E6F3, #A05FE0);
 }
 
 .palmiak-image:hover:before {
@@ -181,9 +255,11 @@
     0% {
         background-position: 0% 50%;
     }
+
     50% {
         background-position: 100% 50%;
     }
+
     100% {
         background-position: 0% 50%;
     }

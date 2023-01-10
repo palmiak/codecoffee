@@ -36,16 +36,12 @@
 
         {{ vite src="resources/css/web.css|resources/js/web.js" }}
     </head>
-    <body class="bg-palmiak_bg font-palmiak-font-serif leading-normal text-zinc-300">
+    <body class="bg-palmiak_dark_bg font-palmiak-font-serif leading-normal text-zinc-300">
         {{ partial:partials/header }}
 
-        <div class="flex flex-col min-h-screen">
-            <div class="flex-1 pb-10 w-full mx-auto {{ current_template == 'posts/show' ? 'max-w-6xl' : 'max-w-3xl px-6' }} pt-20">
-                {{ template_content }}
-            </div>
+        {{ template_content }}
 
-            {{ partial:partials/footer }}
-        </div>
+        {{ partial:partials/footer }}
 
     </body>
 </html>

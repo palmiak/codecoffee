@@ -3,7 +3,203 @@
         <h2 class="italic tracking-tight text-center">Looks like there were no posts published yet.</h2>
     {{ /if }}
 
-    {{ posts }}
+    <main class="pt-[160px]">
+        <article class="container mx-auto px-5 mb-[120px] grid grid-cols-1 lg:grid-cols-2 gap-10 content-center items-center">
+            <div class="item">
+                <span class="py-3 px-5 inline-block mb-6 uppercase text-sm font-palmiak-font-sansserif font-bold text-white border origin-center -rotate-[4deg] rounded-tr-[20px] rounded-bl-[20px] border-dashed border-2 border-palmiak_pink tracking-[3px] text-xs">next episode</span>
+                <time class="block uppercase mb-4">Tuesday, January 10 @ 6:00 PM GMT+1</time>
+                <h1 class="leading-h1 my-3 font-palmiak-font-sansserif">
+                    <a href="" class="text-white underline-link transition-all duration-200 delay-150">
+                        Learn how to test your PHP application
+                    </a>
+                </h1>
+                <span class="text-white">with</span>
+                <h3 class="palmiak-font text-palmiak_green mt-3">Christian Dangl</h3>
+                <div class="mt-7">
+                    <p>Join Jason to talk web dev, ask questions, follow along as he works on projects, and see what kind of fun we can have playing with modern tools and techniques.</p>
+
+                    <div class="block md:flex mt-0 md:mt-7 gap-7 content-center">
+                        <a href="" class="md:mt-0 mt-7 py-5 px-7 inline-block rounded-tr-[20px] rounded-bl-[20px] bg-palmiak_purple font-palmiak-font font-bold shadow-lg shadow-palmiak_purple/70 tracking-[2px] transition-all duration-200 delay-150 hover:bg-palmiak_pink hover:shadow-palmiak_pink/30">
+                            Find out more
+                            {{ svg src="uicons/fi-br-angle-right" class="w-3 h-3 fill-white inline-block ml-3" }}
+                        </a>
+
+                        <a href="" class="md:mt-0 mt-7 py-5 px-7 inline-block rounded-tr-[20px] rounded-bl-[20px] bg-palmiak_bg font-palmiak-font font-bold shadow-lg shadow-palmiak_bg/70 tracking-[2px] transition-all duration-200 delay-150 hover:bg-palmiak_purple/60 hover:shadow-palmiak_purple/30">
+                            Find out more
+                            {{ svg src="uicons/fi-br-angle-right" class="w-3 h-3 fill-white inline-block ml-3" }}
+                        </a>
+                    </div>
+                    <div class="flex mt-10 gap-10 content-center">
+                        <a href="" class="flex content-center text-white hover:text-palmiak_blue transition-all opacity-50 hover:opacity-100 text-sm">
+                            {{ svg src="uicons/fi-rr-calendar" class="w-5 h-5 fill-white inline-block mr-3" }}
+                            add to calendar
+                        </a>
+                        <a href="" class="flex content-center text-white hover:text-palmiak_blue transition-all opacity-50 hover:opacity-100 text-sm">
+                            {{ svg src="uicons/fi-rr-share" class="w-5 h-5 fill-white inline-block mr-3" }}
+                            share on twitter
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="item bg-contain bg-center bg-no-repeat bg-[url('/resources/images/ccs_pattern.svg')]">
+                <div class="flex justify-end items-end pl-5 pr-0">
+                    <a href="" class="block xl:h-[440px] xl:w-[440px] lg:h-96 lg:w-96 h-60 w-60 rounded-full relative overflow-hidden">
+                        <span class="absolute inset-0 w-full h-full z-10 bg-gradient-to-r from-palmiak_purple/0 to-palmiak_purple origin-center hover:rotate-45 transition-all duration-200 delay-150"></span>
+                        <img src="https://images.unsplash.com/photo-1492633397843-92adffad3d1c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=600&w=600&q=80" alt="" class="block rounded-full object-cover xl:h-[440px] xl:w-[440px] lg:h-96 lg:w-96 h-60 w-60">
+                    </a>
+                    <a href="" class="block lg:h-30 lg:w-30 h-20 w-20 rounded-full relative overflow-hidden xl:-left-32 lg:-left-20 -left-10 z-20 border-4 border-palmiak_dark_bg">
+                        <span class="absolute inset-0 w-full h-full z-10 bg-gradient-to-r from-palmiak_pink/20 to-palmiak_pink/90"></span>
+                        <img src="https://images.unsplash.com/photo-1489980557514-251d61e3eeb6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=600&w=600&q=80" alt="" class="block rounded-full object-cover lg:h-30 lg:w-30 h-20 w-20 grayscale">
+
+                    </a>
+                </div>
+            </div>
+        </article>
+
+        <div class="line h-0.5"></div>
+
+        <section class="container mx-auto mt-[120px] mb-[120px] px-5">
+            <h3 class="mt-0 mb-10">Watch earlier episodes</h3>
+
+            <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-10">
+                <article class="item">
+                    <div class="item bg-contain bg-center bg-no-repeat bg-[url('/resources/images/ccs_pattern.svg')] pl-5 pr-5">
+                        <a href="" class="block h-60 w-60 rounded-full relative overflow-hidden">
+                            <span class="absolute inset-0 w-full h-full z-10 bg-gradient-to-r from-palmiak_bg/0 to-palmiak_bg origin-center rotate-90 hover:rotate-180 transition-all duration-200 delay-150"></span>
+                            <img src="https://images.unsplash.com/photo-1604364721460-0cbc5866219d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=600&w=600&q=80" alt="" class="block rounded-full object-cover h-60 w-60">
+                        </a>
+                    </div>
+                    <h2 class="text-[32px] leading-h1 my-3 font-palmiak-font-sansserif">
+                        <a href="" class="text-white underline-link transition-all duration-200 delay-150">
+                            Learn how to test your PHP application
+                        </a>
+                        <span class="block mt-2 text-base font-palmiak-font font-normal">with <strong class="font-normal text-palmiak_pink">Cassidy Williams</strong></span>
+                    </h2>
+                    <div class="mt-7">
+                        <p>Join Jason to talk web dev, ask questions, follow along as he works on projects, and see what kind of fun we can have playing with modern tools and techniques.</p>
+
+                        <p class="mt-3 mb-7">
+                            <a href="" class="before:content-['#'] before:absolute before:text-white/30 pl-4 relative inline-block before:top-0 before:left-0 text-white/30 hover:text-white transition-all duration-200 delay-150 before:transition-all before:duration-200 before:delay-150 hover:text-palmiak_pink hover:before:text-palmiak_pink mr-3">lorem ipsum</a>
+                            <a href="" class="before:content-['#'] before:absolute before:text-white/30 pl-4 relative inline-block before:top-0 before:left-0 text-white/30 hover:text-white transition-all duration-200 delay-150 before:transition-all before:duration-200 before:delay-150 hover:text-palmiak_pink hover:before:text-palmiak_pink mr-3">lorem ipsum</a>
+                            <a href="" class="before:content-['#'] before:absolute before:text-white/30 pl-4 relative inline-block before:top-0 before:left-0 text-white/30 hover:text-white transition-all duration-200 delay-150 before:transition-all before:duration-200 before:delay-150 hover:text-palmiak_pink hover:before:text-palmiak_pink mr-3">lorem ipsum</a>
+                        </p>
+
+                        <a href="" class="py-5 px-7 inline-block rounded-tr-[20px] rounded-bl-[20px] hover:bg-palmiak_purple font-palmiak-font font-bold text-base shadow-lg hover:shadow-palmiak_purple/60 tracking-[2px] transition-all duration-200 delay-150 bg-palmiak_pink shadow-palmiak_pink/30">
+                            {{ svg src="uicons/fi-br-play" class="w-4 h-4 fill-white inline-block mr-3" }}
+                            Watch Now
+                        </a>
+                    </div>
+                </article>
+
+                <article class="item">
+                    <div class="item bg-contain bg-center bg-no-repeat bg-[url('/resources/images/ccs_pattern.svg')] pl-5 pr-5">
+                        <a href="" class="block h-60 w-60 rounded-full relative overflow-hidden">
+                            <span class="absolute inset-0 w-full h-full z-10 bg-gradient-to-r from-palmiak_bg/0 to-palmiak_bg origin-center rotate-90 hover:rotate-180 transition-all duration-200 delay-150"></span>
+                            <img src="https://images.unsplash.com/photo-1615109398623-88346a601842?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=600&w=600&q=80" alt="" class="block rounded-full object-cover h-60 w-60">
+                        </a>
+                    </div>
+                    <h2 class="text-[32px] leading-h1 my-3 font-palmiak-font-sansserif">
+                        <a href="" class="text-white underline-link transition-all duration-200 delay-150">
+                            Vivamus sem elit, maximus quis elit malesuada sapien
+                        </a>
+                        <span class="block mt-2 text-base font-palmiak-font font-normal">with <strong class="font-normal text-palmiak_pink">Cassidy Williams</strong></span>
+                    </h2>
+                    <div class="mt-7">
+                        <p>Join Jason to talk web dev, ask questions, follow along as he works on projects, and see what kind of fun we can have playing with modern tools and techniques.</p>
+
+                        <p class="mt-3 mb-7">
+                            <a href="" class="before:content-['#'] before:absolute before:text-white/30 pl-4 relative inline-block before:top-0 before:left-0 text-white/30 hover:text-white transition-all duration-200 delay-150 before:transition-all before:duration-200 before:delay-150 hover:text-palmiak_pink hover:before:text-palmiak_pink mr-3">lorem ipsum</a>
+                            <a href="" class="before:content-['#'] before:absolute before:text-white/30 pl-4 relative inline-block before:top-0 before:left-0 text-white/30 hover:text-white transition-all duration-200 delay-150 before:transition-all before:duration-200 before:delay-150 hover:text-palmiak_pink hover:before:text-palmiak_pink mr-3">lorem ipsum</a>
+                            <a href="" class="before:content-['#'] before:absolute before:text-white/30 pl-4 relative inline-block before:top-0 before:left-0 text-white/30 hover:text-white transition-all duration-200 delay-150 before:transition-all before:duration-200 before:delay-150 hover:text-palmiak_pink hover:before:text-palmiak_pink mr-3">lorem ipsum</a>
+                        </p>
+
+                        <a href="" class="py-5 px-7 inline-block rounded-tr-[20px] rounded-bl-[20px] hover:bg-palmiak_purple font-palmiak-font font-bold text-base shadow-lg hover:shadow-palmiak_purple/60 tracking-[2px] transition-all duration-200 delay-150 bg-palmiak_pink shadow-palmiak_pink/30">
+                            {{ svg src="uicons/fi-br-play" class="w-4 h-4 fill-white inline-block mr-3" }}
+                            Watch Now
+                        </a>
+                    </div>
+                </article>
+
+                <aside class="item justify-self-stretch place-items-center rounded-tr-[20px] rounded-bl-[20px] border-dashed border-2 border-palmiak_purple p-10 shadow-lg shadow-palmiak_purple/20">
+                    <div class="grid grid-cols-1 gap-0 place-items-center h-full">
+                        <div class="item text-center">
+                            <p>Do you have an idea for a cool live stream topic or do you want to be my guest?<br>Write to me about this.</p>
+                            <a href="" class="mt-7 py-5 px-7 inline-block rounded-tr-[20px] rounded-bl-[20px] bg-palmiak_purple font-palmiak-font font-bold text-base shadow-lg shadow-palmiak_purple/60 tracking-[2px] transition-all duration-200 delay-150 hover:bg-palmiak_pink hover:shadow-palmiak_pink/30">
+                                {{ svg src="uicons/fi-rr-envelope" class="w-4 h-4 fill-white inline-block mr-3" }}
+                                write to me
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <section class="py-[80px] px-5 bg-gradient-to-b from-palmiak_bg/30 to-palmiak_bg/0">
+            <div class="container mx-auto text-center">
+                <p class="text-base text-white/60 mb-3 tracking-wide font0palmiak uppercase">Sponsors</p>
+
+                <div class="flex flex-wrap flex-col lg:flex-row lg:items-end justify-center gap-x-10 gap-y-7">
+                    <a href="" target="_blank" class=""><img src="/images/kinsta-logo-alpha-white.png" class="max-h-8 inline-block" alt=""></a>
+                    <a href="" target="_blank" class=""><img src="/images/coffeehood-logo.png" class="max-h-20 inline-block" alt=""></a>
+                </div>
+
+                <p class="text-sm mt-8">
+                    <a href="" class="text-white/20 hover:text-white underline transition-all duration-200 delay-150">Become a sponsor</a>
+                </p>
+            </div>
+        </section>
+        <div class="line h-0.5"></div>
+
+        <!-- ====== About Section Start -->
+        <div class="bg-palmiak_bg/30">
+            <section class="container mx-auto pt-[120px] pb-[120px] px-5 ">
+                <div class="flex flex-wrap items-center justify-between">
+                    <div class="w-full px-6 lg:w-6/12 bg-contain bg-center bg-no-repeat bg-[url('/resources/images/ccs_pattern.svg')]">
+                        <div class="-mx-3 lg:flex items-end sm:-mx-4">
+                            <div class="w-full px-3 sm:px-4 xl:w-3/5">
+                                <div class="relative z-10 my-4">
+                                    <div class="block relative overflow-hidden rounded-full">
+                                        <span class="absolute inset-0 w-full h-full z-10 bg-gradient-to-r from-palmiak_purple/0 to-palmiak_purple origin-center hover:rotate-45 transition-all duration-200 delay-150"></span>
+                                        <img src="https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=600&q=80" alt=""
+                                        class="w-full rounded-full object-cover" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full lg:block hidden px-3 sm:px-4 xl:w-2/5">
+                                <div class="py-3 sm:py-4">
+                                    <div class="block relative overflow-hidden rounded-full">
+                                        <span class="absolute inset-0 w-full h-full z-10 bg-gradient-to-r from-palmiak_pink/0 to-palmiak_pink origin-center hover:rotate-45 transition-all duration-200 delay-150"></span>
+                                        <img src="https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=600&q=80" alt=""
+                                        class="w-full rounded-full object-cover" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full px-4 lg:w-1/2 xl:w-5/12">
+                        <div class="mt-10 lg:mt-0">
+                            <span class="text-palmiak_pink mb-2 block text-lg">
+                                About the Host
+                            </span>
+                            <h2 class="text-white font-palmiak-font-sansserif mb-8 font-bold sm:text-4xl">
+                                Maciek Palmowski
+                            </h2>
+                            <p>
+                                A domain name is one of the first steps to establishing your brand.
+                                Secure a consistent brand image <a href="" target="_blank" class="text-palmiak_pink hover:text-white transition-all duration-200 delay-150">www.maciekpalmowski.dev</a> with a domain name that matches your
+                                business.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="line h-0.5"></div>
+        <!-- ====== About Section End -->
+
+    </main>
+
+    <!-- {{ posts }}
         {{ partial:partials/list-item }}
     {{ /posts }}
 
@@ -45,5 +241,5 @@
                 </ul>
             </div>
         {{ /if }}
-    {{ /paginate }}
+    {{ /paginate }} -->
 {{ /collection:posts }}
