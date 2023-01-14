@@ -1,0 +1,25 @@
+{{#
+    @name All episodes
+    @desc An item that we us on all kind of episodes lists.
+#}}
+<main class="pt-[160px]">
+
+    <section class="container mx-auto mb-[120px] px-5">
+        <h3 class="mt-0 mb-10">All episodes</h3>
+
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-10">
+            {{ collection:episodes limit="0"}}
+                {{ partial:partials/event-item }}
+                {{ partial:partials/event-item }}
+                {{ partial:partials/event-item }}
+                {{ partial:partials/event-item }}
+                {{ partial:partials/event-item }}
+                {{ partial:partials/event-item }}
+                {{ partial:partials/event-item }}
+            {{ /collection:episodes }}
+        </div>
+    </section>
+
+    {{ partial:partials/sponsors }}
+
+</main>
