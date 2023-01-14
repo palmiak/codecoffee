@@ -3,34 +3,54 @@
         <div class="lg:grid lg:grid-cols-2 lg:gap-12">
             <div
                 class="lg:order-last rounded-tr-[20px] rounded-bl-[20px] border-dashed border-2 border-palmiak_purple p-10 shadow-lg shadow-palmiak_purple/20">
-                <div class="grid grid-cols-1 gap-0 place-items-center h-full">
-                    <div class="space-y-4">
+                <div class="grid grid-cols-1 gap-0 place-items-center h-full ml-form-embedContainer ml-subscribe-form ml-subscribe-form-3015655" id="mlb2-3015655">
+                    <div class="space-y-4 ml-form-successBody row-success" style="display: none">
+                        <div class="mb-10">
+                            <h2 class="text-[30px] mb-7 mt-0 text-white font-palmiak-font-sansserif">Thank you ☕</h2>
+                            <div class="line h-0.5 w-44"></div>
+                            <p class="mt-7 text-sm text-white/30">
+                                You have successfully joined&nbsp;<strong>Code and Coffee</strong>&nbsp;<strong>Show</strong> subscriber list.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-form">
                         <div class="mb-10">
                             <h2 class="text-[30px] mb-7 mt-0 text-white font-palmiak-font-sansserif">Subscribe to the
                                 newsletter</h2>
                             <div class="line h-0.5 w-44"></div>
                             <p class="mt-7 text-sm text-white/30">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Veritatis, harum deserunt nesciunt praesentium, repellendus eum
-                                perspiciatis ratione pariatur a aperiam eius numquam doloribus
-                                asperiores sunt.
+                                If you want to be informed about the upcoming webinars just fill the form below.
                             </p>
                         </div>
 
-                        <form class="w-full mt-0">
+                        <form class="w-full mt-0"
+                            action="https://assets.mailerlite.com/jsonp/283196/forms/77288518956615112/subscribe"
+                            data-code="" method="post" target="_blank">
                             <label for="UserEmail" class="sr-only"> Email </label>
 
                             <div class="p-0 focus-within:ring-transparent sm:flex sm:items-center gap-3">
-                                <input type="email" id="UserEmail" placeholder="john@rhcp.com"
-                                    class="w-full rounded-tl-[20px] rounded-br-[20px] border-2 border-palmiak_purple/20 focus:border-transparent focus:ring-transparent focus:text-white placeholder:text-white/60 bg-palmiak_dark_bg h-[68px] text-white focus:bg-palmiak_bg/60 px-5" />
-
-                                <button
+                                <input aria-label="email" id="UserEmail" placeholder="your-name@domain.com"
+                                    aria-required="true" type="email" data-inputmask=""
+                                    name="fields[email]" autocomplete="email" aria-invalid="false"
+                                    class="w-full rounded-tl-[20px] rounded-br-[20px] border-2 border-palmiak_purple/20 focus:border-transparent focus:ring-transparent focus:text-white placeholder:text-white/60 bg-palmiak_dark_bg h-[68px] text-white focus:bg-palmiak_bg/60 px-5 form-control" />
+                                <input type="hidden" name="ml-submit" value="1">
+                                <button type="submit"
                                     class="w-full px-5 py-5 mt-1 font-bold tracking-wide text-white uppercase transition-none bg-palmiak_purple rounded-tr-[20px] rounded-bl-[20px] hover:bg-palmiak_pink sm:mt-0 sm:w-auto sm:flex-shrink-0 border border-2 border-gray-900/20">
                                     Subscribe
                                 </button>
                             </div>
+                            <input type="hidden" name="anticsrf" value="true">
                         </form>
                     </div>
+
+                    <script>
+                        function ml_webform_success_3015655() {
+                            var $ = ml_jQuery || jQuery;
+                            $('.ml-subscribe-form-3015655 .row-success').show();
+                            $('.ml-subscribe-form-3015655 .row-form').hide();
+                        }
+                    </script>
+                    <script src="https://groot.mailerlite.com/js/w/webforms.min.js?v300817f630ad0e957914d0b28a2b6d78" type="text/javascript"></script>
                 </div>
 
             </div>
@@ -101,26 +121,26 @@
 
                 <div class="grid grid-cols-1 gap-8 mt-16 sm:grid-cols-3">
                     {{ nav:bottom_nav }}
-                    {{ if depth == 1 }}
-                        <div>
-                            <p class="font-palmiak-font-sansserif font-bold text-white">{{ title }}</p>
-                            <nav class="mt-6">
-                                {{ if children }}
-                                    <ul class="space-y-4">{{ *recursive children* }}</ul>
-                                {{ /if }}
-
-                            </nav>
-                        </div>
-                    {{ else }}
-                        <li>
-                            <a href="{{ if url | is_email }}
+                        {{ if depth == 1 }}
+                            <div>
+                                <p class="font-palmiak-font-sansserif font-bold text-white">{{ title }}</p>
+                                <nav class="mt-6">
+                                    {{ if children }}
+                                        <ul class="space-y-4">{{ *recursive children* }}</ul>
+                                    {{ /if }}
+                                </nav>
+                            </div>
+                        {{ else }}
+                            <li>
+                                <a href="{{ if url | is_email }}
                                     mailto:{{ url }}
                                 {{ else }}
                                     {{ url }}
                                 {{/if}}"
-                                class="before:content-['#'] before:absolute before:text-white/30 pl-4 hover:pl-5 relative block before:top-0 before:left-0 text-white transition-all duration-200 delay-150 before:transition-all before:duration-200 before:delay-150 hover:text-palmiak_pink hover:before:text-palmiak_pink">{{ title }}</a>
-                        </li>
-                    {{ endif }}
+                                    class="before:content-['#'] before:absolute before:text-white/30 pl-4 hover:pl-5 relative block before:top-0 before:left-0 text-white transition-all duration-200 delay-150 before:transition-all before:duration-200 before:delay-150 hover:text-palmiak_pink hover:before:text-palmiak_pink">{{ title }}</a>
+                            </li>
+
+                        {{ endif }}
                     {{ /nav:bottom_nav }}
                 </div>
 
