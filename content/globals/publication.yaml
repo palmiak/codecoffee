@@ -2,11 +2,23 @@ title: Publication
 data:
   name: 'maciek palmowski'
   description: 'My small little blog about WordPress, CI/CD, and Technology'
-  logo: aerozeppelin-logo.svg
-  show_post_author: false
-  show_tags_navigation: false
+  photo:
+    - profile.jpg
+    - maciek-1673483738.jpg
+  sponsors:
+    -
+      id: lcs94oby
+      logo: sponsors/kinsta-logo-alpha-white.png
+      url: 'https://kinsta.com'
+      class: max-h-8
+    -
+      id: lcs941h2
+      logo: sponsors/coffeehood-logo.png
+      url: 'https://coffeehood.pl'
+      class: max-h-20
   footer_links:
     -
+      id: CuFfRQNL
       name: Twitter
       url: 'https://twitter.com/palmiak_fp'
       icon: icons/twitter.svg

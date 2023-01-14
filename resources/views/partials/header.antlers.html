@@ -41,6 +41,7 @@
             <div x-show="open" @click.outside="open = false" x-transition
                 class="absolute top-10 right-0 shadow-lg bg-palmiak_bg p-1 max-w-[280px] min-w-[120px] sm:static sm:block">
                 <ul class="font-bold font-palmiak-font tracking-widest">
+                    {{#
                     {{ nav:top_nav select="title|url" }}
                     <li>
                         <a href="{{ url }}"
@@ -48,17 +49,17 @@
                             title }}</a>
                     </li>
                     {{ /nav:top_nav }}
-                    {{ if publication:show_tags_navigation }}
+                    #}}
                     <li>
-                        <a href="{{ link to=" posts/tags" }}"
-                            class="px-5 py-3 whitespace-nowrap block rounded-lg text-white transition-colors hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-br hover:from-palmiak_blue hover:to-palmiak_green">Tags</a>
+                        <a href="https://www.youtube.com/@thecodeandcoffeeshow" target="about:blank" class="px-5 py-3 whitespace-nowrap block text-white transition-colors hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-br hover:from-palmiak_blue hover:to-palmiak_green">
+                            Subscribe now on YT!</a>
                     </li>
-                    {{ /if }}
                 </ul>
             </div>
         </div>
 
         <ul class="hidden sm:inline-flex font-bold items-center font-palmiak-font text-sm tracking-widest">
+            {{#
             {{ nav:top_nav select="title|url" }}
             <li class="ml-8">
                 <a href="{{ url }}"
@@ -66,14 +67,9 @@
                     title }}</a>
             </li>
             {{ /nav:top_nav }}
-            {{ if publication:show_tags_navigation }}
+            #}}
             <li class="ml-8">
-                <a href="{{ link to=" posts/tags" }}"
-                    class="text-white hover:text-palmiak_pink transition-colors">Tags</a>
-            </li>
-            {{ /if }}
-            <li class="ml-8">
-                <a href="" class="flex gap-3 items-center text-white/70 hover:text-palmiak_pink transition-all duration-200 delay-150">
+                <a href="https://www.youtube.com/@thecodeandcoffeeshow" target="about:blank" class="flex gap-3 items-center text-white/70 hover:text-palmiak_pink transition-all duration-200 delay-150">
                     <div class="icon w-[60px] h-[60px] rounded-tr-[20px] rounded-bl-[20px] relative bg-palmiak_purple shadow-lg shadow-palmiak_purple/70 hover:bg-palmiak_pink hover:shadow-palmiak_pink/40 transition-all duration-200 delay-150">
                         {{ svg src="uicons/fi-brands-youtube" class="w-5 h-5 fill-white absolute top-5 left-5" }}
                     </div>

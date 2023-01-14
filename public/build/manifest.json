@@ -1,23 +1,47 @@
 {
+  "resources/images/ccs_pattern.svg": {
+    "file": "assets/ccs_pattern.6e8e2db8.svg",
+    "src": "resources/images/ccs_pattern.svg"
+  },
+  "resources/fonts/poppins-v20-latin-regular.woff2": {
+    "file": "assets/poppins-v20-latin-regular.7d93459d.woff2",
+    "src": "resources/fonts/poppins-v20-latin-regular.woff2"
+  },
+  "resources/fonts/poppins-v20-latin-italic.woff2": {
+    "file": "assets/poppins-v20-latin-italic.50d0c174.woff2",
+    "src": "resources/fonts/poppins-v20-latin-italic.woff2"
+  },
   "resources/fonts/JetBrainsMono-Regular.woff2": {
     "file": "assets/JetBrainsMono-Regular.bceff071.woff2",
     "src": "resources/fonts/JetBrainsMono-Regular.woff2"
   },
-  "resources/fonts/JetBrainsMono-ExtraBold.woff2": {
-    "file": "assets/JetBrainsMono-ExtraBold.28507c9c.woff2",
-    "src": "resources/fonts/JetBrainsMono-ExtraBold.woff2"
+  "resources/fonts/poppins-v20-latin-700.woff2": {
+    "file": "assets/poppins-v20-latin-700.9338e65f.woff2",
+    "src": "resources/fonts/poppins-v20-latin-700.woff2"
+  },
+  "resources/fonts/poppins-v20-latin-700italic.woff2": {
+    "file": "assets/poppins-v20-latin-700italic.4b086471.woff2",
+    "src": "resources/fonts/poppins-v20-latin-700italic.woff2"
   },
   "resources/fonts/JetBrainsMono-Bold.woff2": {
     "file": "assets/JetBrainsMono-Bold.df3f86c0.woff2",
     "src": "resources/fonts/JetBrainsMono-Bold.woff2"
   },
+  "resources/fonts/poppins-v20-latin-600.woff2": {
+    "file": "assets/poppins-v20-latin-600.f4e80d9d.woff2",
+    "src": "resources/fonts/poppins-v20-latin-600.woff2"
+  },
+  "resources/fonts/JetBrainsMono-ExtraBold.woff2": {
+    "file": "assets/JetBrainsMono-ExtraBold.28507c9c.woff2",
+    "src": "resources/fonts/JetBrainsMono-ExtraBold.woff2"
+  },
   "resources/js/web.js": {
-    "file": "assets/web.b4ced189.js",
+    "file": "assets/web.22c02acb.js",
     "src": "resources/js/web.js",
     "isEntry": true
   },
   "resources/css/web.css": {
-    "file": "assets/web.ade4e279.css",
+    "file": "assets/web.1e2186b9.css",
     "src": "resources/css/web.css",
     "isEntry": true
   }

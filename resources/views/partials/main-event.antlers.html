@@ -1,0 +1,52 @@
+{{#
+    @name Main event
+    @desc Shows either the upcoming event or the last one if upcoming is planned
+#}}
+{{ collection:episodes limit="1" }}
+<article class="container mx-auto px-5 mb-[120px] grid grid-cols-1 lg:grid-cols-2 gap-10 content-center items-center">
+    <div class="item">
+        <span class="py-3 px-5 inline-block mb-6 uppercase text-sm font-palmiak-font-sansserif font-bold text-white border origin-center -rotate-[4deg] rounded-tr-[20px] rounded-bl-[20px] border-dashed border-2 border-palmiak_pink tracking-[3px] text-xs">
+            {{ now | is_after:streaming_date ? 'last' : 'next' }} episode</span>
+        <time class="block uppercase mb-4">{{ streaming_date format="l, F d @ G:i" }} UTC</time>
+        <h1 class="leading-h1 my-3 font-palmiak-font-sansserif">
+            <a href="{{ yt_link }}" target="about:blank" class="text-white underline-link transition-all duration-200 delay-150">
+                {{ title }}
+            </a>
+        </h1>
+        <span class="text-white">with</span>
+        <h3 class="palmiak-font text-palmiak_green mt-3">{{ guest:0:title }}</h3>
+        <div class="mt-7">
+            {{ description }}
+            <div class="block md:flex mt-0 md:mt-7 gap-7 content-center">
+                {{ partial:partials/ui/main-primary-button text="{{ now | is_after:streaming_date ? 'Watch now' : 'Set reminder' }}" url="{{ yt_link }}" blank="true" }}
+            </div>
+            <div class="flex mt-10 gap-10 content-center">
+                {{#
+                <a href="" class="flex content-center text-white hover:text-palmiak_blue transition-all opacity-50 hover:opacity-100 text-sm">
+                    {{ svg src="uicons/fi-rr-calendar" class="w-5 h-5 fill-white inline-block mr-3" }}
+                    add to calendar
+                </a>
+                #}}
+                <a href="" class="flex content-center text-white hover:text-palmiak_blue transition-all opacity-50 hover:opacity-100 text-sm">
+                    {{ svg src="uicons/fi-rr-share" class="w-5 h-5 fill-white inline-block mr-3" }}
+                    share on twitter
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="item bg-contain bg-center bg-no-repeat bg-[url('/resources/images/ccs_pattern.svg')]">
+        <div class="flex justify-end items-end pl-5 pr-0">
+            <a href="{{ yt_link }}" target="about:blank" class="block xl:h-[440px] xl:w-[440px] lg:h-96 lg:w-96 h-60 w-60 rounded-full relative overflow-hidden">
+                <span class="absolute inset-0 w-full h-full z-10 bg-gradient-to-r from-palmiak_purple/0 to-palmiak_purple origin-center hover:rotate-45 transition-all duration-200 delay-150"></span>
+                <img src="{{ glide :src="guest:0:photo.url" format="webp" }}" alt="{{ guest:0:photo.alt }}" class="block rounded-full object-cover xl:h-[440px] xl:w-[440px] lg:h-96 lg:w-96 h-60 w-60">
+            </a>
+            <a href="{{ yt_link }}" target="about:blank" class="block lg:h-30 lg:w-30 h-20 w-20 rounded-full relative overflow-hidden xl:-left-32 lg:-left-20 -left-10 z-20 border-4 border-palmiak_dark_bg">
+                <span class="absolute inset-0 w-full h-full z-10 bg-gradient-to-r from-palmiak_pink/20 to-palmiak_pink/90"></span>
+                <img src="{{ glide :src="publication:photo:0.url" format="webp" }}" alt="{{ publication:photo:0.alt }}" class="block rounded-full object-cover lg:h-30 lg:w-30 h-20 w-20 grayscale">
+
+            </a>
+        </div>
+    </div>
+</article>
+<div class="line h-0.5"></div>
+{{ /collection:episodes }}

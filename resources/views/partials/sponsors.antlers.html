@@ -1,0 +1,27 @@
+{{#
+    @name Sponsors section
+    @desc Lists all the sponsors in Publication/sponsors
+#}}
+{{ if publication:sponsors }}
+    <section class="py-[80px] px-5 bg-gradient-to-b from-palmiak_bg/30 to-palmiak_bg/0">
+        <div class="container mx-auto text-center">
+            <p class="text-base text-white/60 mb-3 tracking-wide font0palmiak uppercase">Sponsors</p>
+
+            <div class="flex flex-wrap flex-col lg:flex-row lg:items-end justify-center gap-x-10 gap-y-7">
+                {{ publication:sponsors }}
+                    <a href="{{ url }}" target="_blank" class="" target='about:blank'>
+                        <img src="{{ glide :src="logo" format="webp" }}" loading="lazy" class="{{ class }} inline-block" alt="{{ logo.alt }}"></a>
+                {{ /publication:sponsors }}
+            </div>
+
+            <p class="text-sm mt-8">
+                <a href="mailto:hi@maciekpalmowski.dev" class="text-white/20 hover:text-white underline transition-all duration-200 delay-150">Become
+                    a sponsor</a>
+            </p>
+        </div>
+    </section>
+    <div class="line h-0.5"></div>
+
+
+
+{{ endif }}

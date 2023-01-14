@@ -5,6 +5,11 @@ module.exports = {
         "./resources/**/*.vue",
         "./content/**/*.md",
     ],
+    safelist: [
+        {
+            pattern: /max-h-.+/,
+        },
+    ],
     theme: {
         extend: {
             fontFamily: {

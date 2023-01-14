@@ -1,0 +1,27 @@
+tree:
+  -
+    id: c3b7fd8e-8951-4482-8247-2d4be3b0b6f2
+    title: Services
+    url: '#'
+    children:
+      -
+        id: f9c90e49-33ff-410f-b331-8cbb55c776e3
+        title: 'Home page'
+        url: /
+      -
+        id: 02054c4a-58ad-41f2-9abc-d285b9315dc2
+        title: Contact
+        url: hi@maciekpalmowski.dev
+  -
+    id: a3411e08-6c86-4a00-9909-b566e83ef83b
+    title: Sponsors
+    url: '#'
+    children:
+      -
+        id: 2e46cfd2-140b-49ff-a706-8c9f546b8a83
+        title: Kinsta
+        url: 'https://kinsta.com/application-hosting'
+      -
+        id: 601648e8-ec2c-4a1d-9e67-595afbb16db6
+        title: Coffeehood
+        url: 'https://coffeehood.pl'

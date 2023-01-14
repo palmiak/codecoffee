@@ -1,0 +1,32 @@
+{{#
+    @name Episode on the list of previous episodes
+    @desc An item that we us on all kind of episodes lists.
+#}}
+<article class="item">
+    <div class="item bg-contain bg-center bg-no-repeat bg-[url('/resources/images/ccs_pattern.svg')] pl-5 pr-5">
+        <a href="{{ yt_link }}" target="about:blank" class="block h-60 w-60 rounded-full relative overflow-hidden">
+            <span class="absolute inset-0 w-full h-full z-10 bg-gradient-to-r from-palmiak_bg/0 to-palmiak_bg origin-center rotate-90 hover:rotate-180 transition-all duration-200 delay-150"></span>
+            <img src="{{ glide :src="guest:0:photo.url" format="webp" }}" alt="{{ guest:0:photo.alt }}" class="block rounded-full object-cover h-60 w-60" loading="lazy">
+        </a>
+    </div>
+    <h2 class="text-[32px] leading-h1 my-3 font-palmiak-font-sansserif">
+        <a href="{{ yt_link }}" target="about:blank" class="text-white underline-link transition-all duration-200 delay-150">
+            {{ title }}
+        </a>
+        <span class="block mt-2 text-base font-palmiak-font font-normal">with <strong class="font-normal text-palmiak_pink">{{ guest:0:title }}</strong></span>
+    </h2>
+    <div class="mt-7">
+        {{ description }}
+
+        <p class="mt-3 mb-7">
+        {{ tags }}
+            <span class="before:content-['#'] before:absolute before:text-white/30 pl-4 relative inline-block before:top-0 before:left-0 text-white/30 hover:text-white transition-all duration-200 delay-150 before:transition-all before:duration-200 before:delay-150 hover:text-palmiak_pink hover:before:text-palmiak_pink mr-3">{{ title }}</span>
+        {{ /tags }}
+        </p>
+
+        <a href="{{ yt_link }}" target="about:blank" class="py-5 px-7 inline-block rounded-tr-[20px] rounded-bl-[20px] hover:bg-palmiak_purple font-palmiak-font font-bold text-base shadow-lg hover:shadow-palmiak_purple/60 tracking-[2px] transition-all duration-200 delay-150 bg-palmiak_pink shadow-palmiak_pink/30">
+            {{ svg src="uicons/fi-br-play" class="w-4 h-4 fill-white inline-block mr-3" }}
+            Watch Now
+        </a>
+    </div>
+</article>
