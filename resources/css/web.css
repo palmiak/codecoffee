@@ -86,24 +86,16 @@
 
     }
 
+    .prose h2, .prose h3, .prose h4 {
+        @apply relative pb-3 before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-[30px] before:h-[3px] before:bg-palmiak_blue font-bold text-white font-palmiak-font-sansserif;
+    }
+
     h3 {
-        @apply text-2xl mt-8 mb-4 font-bold text-white;
+        @apply text-2xl mt-8 mb-4 font-bold text-white font-palmiak-font-sansserif;
     }
 
     h4 {
-        @apply text-xl mt-8 mb-4 font-bold text-white;
-    }
-
-    .content {
-        @apply text-lg px-6;
-    }
-
-    .content.page {
-        @apply text-lg px-0;
-    }
-
-    .content>* {
-        @apply max-w-3xl mx-auto;
+        @apply text-xl mt-8 mb-4 font-bold text-white font-palmiak-font-sansserif;
     }
 
     .content .image.wide {
@@ -115,7 +107,7 @@
     }
 
     .content p {
-        @apply leading-relaxed mb-6;
+        @apply mb-5 text-base leading-relaxed;
     }
 
     .content blockquote {
