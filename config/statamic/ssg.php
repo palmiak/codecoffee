@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'base_url' => 'https://sunny-gumption-66b923.netlify.app',
+    'base_url' => config('app.url'),
 
     /*
     |--------------------------------------------------------------------------
@@ -43,7 +43,6 @@ return [
         public_path('js') => 'js',
         public_path('fonts') => 'fonts',
         public_path('assets') => 'assets',
-        public_path('build') => 'build',
     ],
 
     'symlinks' => [
