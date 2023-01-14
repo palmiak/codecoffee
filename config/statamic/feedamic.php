@@ -33,7 +33,7 @@ return [
     */
 
     'collections' => [
-        'posts'
+        'episodes'
     ],
 
 

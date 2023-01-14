@@ -16,6 +16,7 @@
     ],
     "require": {
         "php": "^7.4 || ^8.0",
+        "aerni/social-links": "^3.0",
         "andymnewhouse/radnight": "^1.2",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
