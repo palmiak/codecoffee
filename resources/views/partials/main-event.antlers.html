@@ -2,7 +2,7 @@
     @name Main event
     @desc Shows either the upcoming event or the last one if upcoming is planned
 #}}
-{{ collection:episodes limit="1" }}
+{{ collection:episodes limit="1" sort="date:desc" ) }}
 <article class="container mx-auto px-5 mb-[120px] grid grid-cols-1 lg:grid-cols-2 gap-10 content-center items-center">
     <div class="item">
         <span class="py-3 px-5 inline-block mb-6 uppercase text-sm font-palmiak-font-sansserif font-bold text-white border origin-center -rotate-[4deg] rounded-tr-[20px] rounded-bl-[20px] border-dashed border-2 border-palmiak_pink tracking-[3px] text-xs">
