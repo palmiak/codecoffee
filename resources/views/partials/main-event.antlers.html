@@ -8,7 +8,7 @@
         <span class="py-3 px-5 inline-block mb-6 uppercase text-sm font-palmiak-font-sansserif font-bold text-white border origin-center -rotate-[4deg] rounded-tr-[20px] rounded-bl-[20px] border-dashed border-2 border-palmiak_pink tracking-[3px] text-xs">
             {{ now | is_after:streaming_date ? 'last' : 'next' }} episode</span>
         <time class="block uppercase mb-4">{{ streaming_date format="l, F d @ G:i" }} UTC</time>
-        <h1 class="leading-h1 my-3 font-palmiak-font-sansserif">
+        <h1 class="leading-h1 my-3 font-palmiak-font-sansserif text-3xl md:text-6xl">
             <a href="{{ yt_link }}" target="about:blank" class="text-white underline-link transition-all duration-200 delay-150">
                 {{ title }}
             </a>
