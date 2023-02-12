@@ -5,7 +5,7 @@
         <h3 class="mt-0 mb-10">Watch previous episodes</h3>
 
         <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-10">
-            {{ collection:episodes limit="2" streaming_date:is_before=now sort="date:desc"}}
+            {{ collection:episodes limit="10" streaming_date:is_before=now sort="date:desc"}}
                 {{ partial:partials/event-item }}
             {{ /collection:episodes }}
 
