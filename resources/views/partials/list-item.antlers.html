@@ -20,6 +20,8 @@
             {{ excerpt | strip_tags | safe_truncate:280:... }}
         {{ else }}
             {{ post_excerpt :id="id" }}
+
+            Some new code.
         {{ /if }}
     </p>
 
