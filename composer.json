@@ -12,19 +12,21 @@
         {
             "type": "vcs",
             "url": "https://github.com/palmiak/statamic-feedamic/"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/palmiak/statamic-social-links/"
         }
     ],
     "require": {
         "php": "^7.4 || ^8.0",
-        "aerni/social-links": "^3.0",
-        "andymnewhouse/radnight": "^1.2",
+        "palmiak/social-links": "dev-master",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
         "laravel/framework": "^9.0",
         "laravel/tinker": "^2.5",
-        "palmiak/feedamic": "dev-main",
-        "statamic/cms": "3.3.*",
-        "statamic/ssg": "^1.0"
+        "statamic/cms": "^4.0",
+        "statamic/ssg": "^2.0"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.6",
